@@ -348,7 +348,13 @@ $file->headers['index'];  // 'index abcdef..123456 100644'
 
 ## Documentation
 
-The complete documentation is available at [altophp.com/code-diff](https://altophp.com/code-diff).
+- [Installation](docs/installation.md): install the package and verify its requirements.
+- [Getting started](docs/getting-started.md): compare two strings and render a unified diff.
+- [Diffing](docs/diffing.md): configure comparisons, inspect results, and select an engine.
+- [Rendering](docs/rendering.md): produce unified text, HTML, JSON, or ANSI output.
+- [Formats](docs/formats.md): emit, parse, and apply unified patches.
+- [Errors](docs/errors.md): recover from rejected inputs and patches.
+- [Complete documentation](docs/index.md): review the package scope and every guide.
 
 ## Testing
 
