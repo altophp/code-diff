@@ -356,20 +356,34 @@ $file->headers['index'];  // 'index abcdef..123456 100644'
 - [Errors](docs/errors.md): recover from rejected inputs and patches.
 - [Complete documentation](docs/index.md): review the package scope and every guide.
 
-## Testing
+## Contributing
 
-Run the test suite:
+Contributions of all kinds are welcome. Visit the
+[project on GitHub](https://github.com/altophp/code-diff) to
+[report a bug](https://github.com/altophp/code-diff/issues/new),
+[suggest a feature](https://github.com/altophp/code-diff/issues/new), or
+[open a pull request](https://github.com/altophp/code-diff/pulls).
+
+Before submitting code, run:
 
 ```bash
-vendor/bin/phpunit
+# Runs PHP CS Fixer, PHPStan, and PHPUnit
+composer qa
 ```
 
-Run tests with coverage:
+Changes to public behavior should include tests and documentation.
 
-```bash
-vendor/bin/phpunit --coverage-text
-```
+## Support
+
+ALTO Code Diff is open source and independently maintained by
+[Simon André](https://smnandre.dev). If it is useful to your work, you can
+support its continued development through
+[GitHub Sponsors](https://github.com/sponsors/smnandre).
+
+Sharing the package or
+[starring it on GitHub](https://github.com/altophp/code-diff) also helps.
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+ALTO Code Diff is released by [ALTO PHP](https://altophp.com) under the
+[MIT License](LICENSE).
