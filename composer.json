@@ -22,9 +22,10 @@
             "email": "smn.andre@gmail.com"
         }
     ],
-    "homepage": "https://github.com/altophp/code-diff",
+    "homepage": "https://altophp.com/code-diff",
     "support": {
         "issues": "https://github.com/altophp/code-diff/issues",
+        "source": "https://github.com/altophp/code-diff",
         "docs": "https://altophp.com/code-diff"
     },
     "funding": [
@@ -51,14 +52,18 @@
             "Alto\\Code\\Diff\\Tests\\": "tests/"
         }
     },
+    "config": {
+        "sort-packages": true
+    },
     "scripts": {
-        "cs": "vendor/bin/php-cs-fixer fix",
+        "cs": "vendor/bin/php-cs-fixer fix --dry-run --diff --sequential",
+        "cs:fix": "vendor/bin/php-cs-fixer fix --sequential",
         "qa": [
             "@cs",
             "@sa",
             "@test"
         ],
-        "sa": "vendor/bin/phpstan analyse",
+        "sa": "vendor/bin/phpstan analyse --memory-limit=-1",
         "test": "vendor/bin/phpunit"
     }
 }
