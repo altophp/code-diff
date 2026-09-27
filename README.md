@@ -1,51 +1,21 @@
-# Alto Code Diff
+<h1 align="center">
+  <a href="https://altophp.com/code-diff">
+    <img src=".github/alto-code-diff.svg" alt="ALTO Code Diff">
+  </a>
+</h1>
 
 A modern PHP library to generate, render and apply diffs, featuring advanced algorithms, versatile rendering, and full
 patching support.
 
 ---
 
-&nbsp; [![PHP Version](https://img.shields.io/badge/PHP-8.3+-1e40af?logoColor=white&labelColor=000)](https://github.com/altophp/code-diff)
-&nbsp; [![CI](https://img.shields.io/github/actions/workflow/status/altophp/code-diff/CI.yml?branch=main&label=Tests&logoColor=white&logoSize=auto&labelColor=000&color=2563eb)](https://github.com/altophp/code-diff/actions)
-&nbsp; [![Packagist Version](https://img.shields.io/packagist/v/alto/code-diff?label=Stable&logoColor=white&logoSize=auto&labelColor=000&color=4ba3f7)](https://packagist.org/packages/alto/code-diff)
-&nbsp; [![GitHub Sponsors](https://img.shields.io/github/sponsors/smnandre?logo=github-sponsors&logoColor=4ba3f7&logoSize=auto&label=%20Sponsor&labelColor=000&color=2979ff)](https://github.com/sponsors/smnandre)
-&nbsp; [![License](https://img.shields.io/github/license/altophp/code-diff?label=License&logoColor=white&logoSize=auto&labelColor=000&color=1e40af)](./LICENSE)
-
-## Features
-
-### Advanced Diff Algorithms
-
-- **Myers Diff Algorithm (default)**: Fast and accurate line-by-line and word-by-word diffing (O(ND)).
-- **LCS Diff Algorithm**: Opt-in Longest Common Subsequence engine (O(MN) time and memory) for deterministic academic use cases.
-- **Binary Detection**: Automatic detection and rejection of binary content.
-
-### Versatile Rendering
-
-Visualize and format diffs for any output medium:
-
-#### HTML Output
-
-![HTML Preview](docs/assets/html-preview.svg)
-
-#### ANSI Side-by-Side
-
-![ANSI Preview](docs/assets/side-by-side-preview.svg)
-
-### Full Patching Support
-
-- **Unified Diff Parsing**: Parse standard unified diff patches into objects.
-- **Patch Application**: Apply patches to files with "fuzz" factor support.
-- **Multi-file Bundles**: Handle complex patches affecting multiple files.
-
-## Requirements
-
-- PHP 8.3 or higher
-
-## Installation
-
-```bash
-composer require alto/code-diff
-```
+<p align="center">
+  <a href="https://github.com/altophp/code-diff"><img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.3+-1e40af?logoColor=white&amp;labelColor=000"></a>
+  <a href="https://github.com/altophp/code-diff/actions"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/altophp/code-diff/CI.yml?branch=main&amp;label=Tests&amp;logoColor=white&amp;logoSize=auto&amp;labelColor=000&amp;color=2563eb"></a>
+  <a href="https://packagist.org/packages/alto/code-diff"><img alt="Packagist Version" src="https://img.shields.io/packagist/v/alto/code-diff?label=Stable&amp;logoColor=white&amp;logoSize=auto&amp;labelColor=000&amp;color=4ba3f7"></a>
+  <a href="https://github.com/sponsors/smnandre"><img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/smnandre?logo=github-sponsors&amp;logoColor=4ba3f7&amp;logoSize=auto&amp;label=%20Sponsor&amp;labelColor=000&amp;color=2979ff"></a>
+  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/github/license/altophp/code-diff?label=License&amp;logoColor=white&amp;logoSize=auto&amp;labelColor=000&amp;color=1e40af"></a>
+</p>
 
 ## Quick Start
 
@@ -118,6 +88,42 @@ $renderer = new AnsiSideBySideRenderer(
 );
 
 echo $renderer->render($result);
+```
+
+## Features
+
+### Advanced Diff Algorithms
+
+- **Myers Diff Algorithm (default)**: Fast and accurate line-by-line and word-by-word diffing (O(ND)).
+- **LCS Diff Algorithm**: Opt-in Longest Common Subsequence engine (O(MN) time and memory) for deterministic academic use cases.
+- **Binary Detection**: Automatic detection and rejection of binary content.
+
+### Versatile Rendering
+
+Visualize and format diffs for any output medium:
+
+#### HTML Output
+
+![HTML Preview](docs/assets/html-preview.svg)
+
+#### ANSI Side-by-Side
+
+![ANSI Preview](docs/assets/side-by-side-preview.svg)
+
+### Full Patching Support
+
+- **Unified Diff Parsing**: Parse standard unified diff patches into objects.
+- **Patch Application**: Apply patches to files with "fuzz" factor support.
+- **Multi-file Bundles**: Handle complex patches affecting multiple files.
+
+## Requirements
+
+- PHP 8.3 or higher
+
+## Installation
+
+```bash
+composer require alto/code-diff
 ```
 
 ## Configuration Options
